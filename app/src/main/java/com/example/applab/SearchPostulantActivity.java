@@ -1,5 +1,4 @@
 package com.example.applab;
-
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
@@ -7,17 +6,13 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-
 public class SearchPostulantActivity extends AppCompatActivity {
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search_postulant);
-
         EditText etDni = findViewById(R.id.etDniSearch);
         Button btnBuscar = findViewById(R.id.btnSearch);
-
         btnBuscar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -31,7 +26,6 @@ public class SearchPostulantActivity extends AppCompatActivity {
                 EditText etColegio = findViewById(R.id.etSchool);
                 EditText etCarrera = findViewById(R.id.etCareer);
                 TextView encontro = findViewById(R.id.prueba);
-
                 if (alumno != null) {
                     dni.setText(alumno.dni);
                     etNombre.setText(alumno.nombre);
