@@ -24,7 +24,7 @@
 
         <LinearLayout
             android:id="@+id/lyDniSearch"
-            android:layout_width="308dp"
+            android:layout_width="328dp"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="24dp"
             android:orientation="horizontal">
@@ -39,9 +39,10 @@
 
             <Button
                 android:id="@+id/btnSearch"
-                android:layout_width="114dp"
+                android:layout_width="142dp"
                 android:layout_height="match_parent"
                 android:background="@drawable/btn"
+                android:drawableLeft="@drawable/ic_baseline_search_24"
                 android:paddingVertical="8dp"
                 android:text="Buscar"
                 app:backgroundTint="@null" />
