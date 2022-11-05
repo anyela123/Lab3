@@ -6,224 +6,190 @@
     android:layout_height="match_parent"
     tools:context=".SearchPostulantActivity">
 
-    <TextView
-        android:id="@+id/tvTitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Buscar postulante"
-        android:textSize="24dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.1"/>
-
     <LinearLayout
-        android:id="@+id/lyDniSearch"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginHorizontal="24dp"
+        android:layout_width="374dp"
+        android:layout_height="554dp"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvTitle"
-        app:layout_constraintVertical_bias="0.1" >
-
-        <EditText
-            android:id="@+id/etDniSearch"
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="20dp"
-            android:hint="DNI"
-            android:inputType="text" />
-
-        <Button
-            android:id="@+id/btnSearch"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:paddingVertical="8dp"
-            android:text="Buscar" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/lyDni"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginHorizontal="24dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lyDniSearch"
-        app:layout_constraintVertical_bias="0.1" >
+        app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/tvDniLabel"
-            android:layout_width="160dp"
-            android:layout_height="wrap_content"
-            android:text="DNI:"
-            android:textSize="16dp" />
-
-        <EditText
-            android:id="@+id/etDni"
+            android:id="@+id/tvTitle"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:enabled="false"
-            android:inputType="text"
-            android:text="Dni" />
-    </LinearLayout>
+            android:layout_height="61dp"
+            android:text="   Buscar postulante"
+            android:textSize="40dp" />
 
-    <LinearLayout
-        android:id="@+id/lyName"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginHorizontal="24dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lyDni"
-        app:layout_constraintVertical_bias="0.05" >
+        <LinearLayout
+            android:id="@+id/lyDniSearch"
+            android:layout_width="308dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/etDniSearch"
+                android:layout_width="154dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:hint="DNI"
+                android:inputType="text" />
+
+            <Button
+                android:id="@+id/btnSearch"
+                android:layout_width="114dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/btn"
+                android:paddingVertical="8dp"
+                android:text="Buscar"
+                app:backgroundTint="@null" />
+        </LinearLayout>
 
         <TextView
-            android:id="@+id/tvNameLabel"
-            android:layout_width="160dp"
-            android:layout_height="wrap_content"
-            android:text="Nombre:"
-            android:textSize="16dp" />
-
-        <EditText
-            android:id="@+id/etName"
+            android:id="@+id/prueba"
             android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:id="@+id/lyDni"
+            android:layout_width="335dp"
             android:layout_height="wrap_content"
-            android:text="Nombre"
-            android:enabled="false"
-            android:inputType="text" />
+            android:layout_marginHorizontal="24dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvDniLabel"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:text="DNI:"
+                android:textSize="16dp" />
+
+            <EditText
+                android:id="@+id/etDni"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:inputType="text"
+                android:text="Dni" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lyName"
+            android:layout_width="335dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvNameLabel"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:text="Nombre:"
+                android:textSize="16dp" />
+
+            <EditText
+                android:id="@+id/etName"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:inputType="text"
+                android:text="Nombre" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lyLastname"
+            android:layout_width="335dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvLastnameLabel"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:text="Apellidos:"
+                android:textSize="16dp" />
+
+            <EditText
+                android:id="@+id/etLastname"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:inputType="text"
+                android:text="Apellidos" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lyBirthday"
+            android:layout_width="335dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvBirthdayLabel"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:text="Fecha de nacimiento:"
+                android:textSize="16dp" />
+
+            <EditText
+                android:id="@+id/etBirthday"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:inputType="date"
+                android:text="Fecha de nacimiento" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lySchool"
+            android:layout_width="335dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvSchoolLabel"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:text="Colegio:"
+                android:textSize="16dp" />
+
+            <EditText
+                android:id="@+id/etSchool"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:inputType="text"
+                android:text="Colegio" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lyCareer"
+            android:layout_width="335dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvCareerLabel"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:text="Carrra universitaria:"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/etCareer"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:inputType="text"
+                android:text="Carrra universitaria" />
+        </LinearLayout>
     </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/lyLastname"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginHorizontal="24dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lyName"
-        app:layout_constraintVertical_bias="0.05">
-
-        <TextView
-            android:id="@+id/tvLastnameLabel"
-            android:layout_width="160dp"
-            android:layout_height="wrap_content"
-            android:text="Apellidos:"
-            android:textSize="16dp" />
-
-        <EditText
-            android:id="@+id/etLastname"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Apellidos"
-            android:enabled="false"
-            android:inputType="text" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/lyBirthday"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginHorizontal="24dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lyLastname"
-        app:layout_constraintVertical_bias="0.05" >
-
-        <TextView
-            android:id="@+id/tvBirthdayLabel"
-            android:layout_width="160dp"
-            android:layout_height="wrap_content"
-            android:text="Fecha de nacimiento:"
-            android:textSize="16dp" />
-
-        <EditText
-            android:id="@+id/etBirthday"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Fecha de nacimiento"
-            android:enabled="false"
-            android:inputType="date" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/lySchool"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginHorizontal="24dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lyBirthday"
-        app:layout_constraintVertical_bias="0.05" >
-
-        <TextView
-            android:id="@+id/tvSchoolLabel"
-            android:layout_width="160dp"
-            android:layout_height="wrap_content"
-            android:text="Colegio:"
-            android:textSize="16dp" />
-
-        <EditText
-            android:id="@+id/etSchool"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Colegio"
-            android:enabled="false"
-            android:inputType="text" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/lyCareer"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="24dp"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lySchool"
-        app:layout_constraintVertical_bias="0.05">
-
-        <TextView
-            android:id="@+id/tvCareerLabel"
-            android:layout_width="160dp"
-            android:layout_height="wrap_content"
-            android:text="Carrra universitaria:"
-            android:textSize="16sp" />
-
-        <EditText
-            android:id="@+id/etCareer"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Carrra universitaria"
-            android:enabled="false"
-            android:inputType="text" />
-    </LinearLayout>
-
-    <TextView
-        android:id="@+id/prueba"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.467"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.307" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
