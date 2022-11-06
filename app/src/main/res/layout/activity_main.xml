@@ -6,31 +6,35 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/btnNewPostulant"
-        android:layout_width="0dp"
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="96dp"
-        android:layout_marginVertical="48dp"
-        android:paddingVertical="20dp"
-        android:text="Crear nuevo postulante"
-        app:layout_constraintVertical_chainStyle="packed"
-        app:layout_constraintBottom_toTopOf="@id/btnSearchPostulant"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/btnSearchPostulant"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="96dp"
-
-        android:paddingVertical="20dp"
-        android:text="Información de Postulante"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btnNewPostulant"/>
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/btnSearchPostulant"
+            android:layout_width="282dp"
+            android:layout_height="58dp"
+            android:layout_margin="50dp"
+            android:layout_marginHorizontal="24dp"
+            android:background="@drawable/btn"
+            android:text="Información de Postulante"
+            app:backgroundTint="@null" />
+
+        <Button
+            android:id="@+id/btnNewPostulant"
+            android:layout_width="282dp"
+            android:layout_height="58dp"
+            android:layout_margin="50dp"
+            android:layout_marginHorizontal="24dp"
+            android:background="@drawable/btn"
+            android:text="Crear nuevo postulante"
+            app:backgroundTint="@null" />
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
